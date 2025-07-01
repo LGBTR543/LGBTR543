@@ -24,11 +24,11 @@
 
 ---
 
-### 📫 **Cómo contactarme / How to reach me:**  
-- **Correo / Email:** [info@juankotara.com](mailto:info@juankotara.com)  
-- **Instagram:** [@juanko.tara](https://www.instagram.com/juanko.tara/)    
+### 📫 **Cómo contactarme / How to reach me:**
+- **Correo / Email:** [info@juankotara.com](mailto:info@juankotara.com)
+- **Instagram:** [@juanko.tara](https://www.instagram.com/juanko.tara/)
 
 ---
 
-### 🎉 **Un fun fact para conocernos más / A fun fact about me:**  
-- Me encanta aprender en el caos: donde todo parece incierto, ahí es donde surgen las mejores ideas 🚀.  
+### 🎉 **Un fun fact para conocernos más / A fun fact about me:**
+- Me encanta aprender en el caos: donde todo parece incierto, ahí es donde surgen las mejores ideas 🚀.
