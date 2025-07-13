@@ -24,11 +24,17 @@
 
 ---
 
-### 📫 **Cómo contactarme / How to reach me:**  
-- **Correo / Email:** [info@juankotara.com](mailto:info@juankotara.com)  
-- **Instagram:** [@juanko.tara](https://www.instagram.com/juanko.tara/)    
+### 📫 **Cómo contactarme / How to reach me:**
+- **Correo / Email:** [info@juankotara.com](mailto:info@juankotara.com)
+- **Instagram:** [@juanko.tara](https://www.instagram.com/juanko.tara/)
 
 ---
 
-### 🎉 **Un fun fact para conocernos más / A fun fact about me:**  
+## JuankoOS
+
+JuankoOS es una plataforma en construcción que combina creatividad y espiritualidad.
+El proyecto incluye generación de letras, slogans y rituales mediante la API de OpenAI e incorpora una interfaz web básica con un estilo en negro, oro y púrpura.
+Consulta la carpeta `juankoos/` para más detalles.
+
+### 🎉 **Un fun fact para conocernos más / A fun fact about me:**
 - Me encanta aprender en el caos: donde todo parece incierto, ahí es donde surgen las mejores ideas 🚀.  
