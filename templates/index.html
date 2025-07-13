@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuankoOS</title>
+    <style>
+        body {
+            background-color: #0c0b16;
+            color: #ffd700;
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+        h1 {
+            color: #7a1fa2;
+        }
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        input[type="submit"] {
+            background-color: #7a1fa2;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>JuankoOS - Portal Creativo</h1>
+    <form method="post">
+        <label for="prompt">Tema de inspiración:</label>
+        <input id="prompt" name="prompt" type="text" required>
+        <input type="submit" value="Invocar">
+    </form>
+    {% if lyrics %}
+    <section>
+        <h2>Lírica</h2>
+        <p>{{ lyrics }}</p>
+    </section>
+    <section>
+        <h2>Slogan</h2>
+        <p>{{ slogan }}</p>
+    </section>
+    <section>
+        <h2>Ritual</h2>
+        <p>{{ ritual }}</p>
+    </section>
+    {% endif %}
+</body>
+</html>
