@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JuankoOS</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #d4af37; /* gold */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: #9b59b6; /* purple */
+    }
+    input, button {
+      padding: 0.5rem;
+      margin: 0.5rem;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>JuankoOS™</h1>
+  <p>Genera letras, eslóganes y rituales místicos.</p>
+  <form id="genForm">
+    <select id="type" aria-label="Tipo de generación">
+      <option value="lyrics">Letra</option>
+      <option value="slogan">Slogan</option>
+      <option value="ritual">Ritual</option>
+    </select>
+    <input id="prompt" type="text" placeholder="Tema" required />
+    <button type="submit">Generar</button>
+  </form>
+  <pre id="result"></pre>
+  <script>
+    document.getElementById('genForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const type = document.getElementById('type').value;
+      const prompt = document.getElementById('prompt').value;
+      const res = await fetch('/api/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type, prompt })
+      });
+      const data = await res.json();
+      document.getElementById('result').textContent = data.result || data.error;
+    });
+  </script>
+</body>
+</html>
