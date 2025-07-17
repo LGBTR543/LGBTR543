@@ -1,0 +1,26 @@
+body {
+    background-color: #000;
+    color: #f0e6ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #462255, #8a2be2, #ffd700);
+    padding: 1em;
+    color: white;
+}
+
+button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a2be2;
+}
