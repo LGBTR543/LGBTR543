@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JuankoOS</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+  <h1>JuankoOS</h1>
+  <p>Creative & Spiritual Assistant</p>
+</header>
+
+<section id="actions">
+  <input type="text" id="inputText" placeholder="Enter your topic here">
+  <button onclick="send('lyrics')">Generate Lyrics</button>
+  <button onclick="send('slogan')">Generate Slogan</button>
+  <button onclick="send('ritual')">Generate Ritual</button>
+</section>
+
+<pre id="output"></pre>
+
+<script>
+async function send(action) {
+  const text = document.getElementById('inputText').value;
+  const res = await fetch('/generate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ action, text })
+  });
+  const data = await res.json();
+  document.getElementById('output').textContent = data.result || data.error;
+}
+</script>
+</body>
+</html>

@@ -32,3 +32,14 @@
 
 ### 🎉 **Un fun fact para conocernos más / A fun fact about me:**  
 - Me encanta aprender en el caos: donde todo parece incierto, ahí es donde surgen las mejores ideas 🚀.  
+
+---
+
+## JuankoOS\u2122
+Una plataforma creativa y espiritual que combina generación de contenido con experiencias digitales.
+
+- Uso de OpenAI para crear líricas, esloganes y rituales.
+- Interfaz web inspirada en tonos púrpura, negro y oro.
+- Diseñada para escalar en Google Kubernetes Engine.
+- Monetización mediante productos digitales y membresías.
+
