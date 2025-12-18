@@ -1,0 +1,110 @@
+:root {
+  --gold: #c59d5f;
+  --purple: #301934;
+  --black: #0f0f10;
+  --glow: #6e4b7a;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Space Grotesk", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at 20% 20%, rgba(110, 75, 122, 0.2), transparent),
+    radial-gradient(circle at 80% 0%, rgba(197, 157, 95, 0.25), transparent),
+    var(--black);
+  color: #f5f1ff;
+  min-height: 100vh;
+}
+
+header.hero {
+  position: relative;
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+  overflow: hidden;
+}
+
+header.hero .halo {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(197, 157, 95, 0.25), rgba(48, 25, 52, 0.8), transparent 70%);
+  filter: blur(50px);
+  z-index: 0;
+}
+
+header.hero .sigil {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  color: var(--gold);
+  margin: 0;
+}
+
+header.hero h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0.4rem 0;
+  font-size: 2.8rem;
+  letter-spacing: 0.1em;
+}
+
+header.hero .subtitle,
+header.hero .mantra {
+  position: relative;
+  z-index: 1;
+  margin: 0.2rem 0;
+  color: #e9ddff;
+}
+
+main.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  padding: 0 1.5rem 3rem;
+}
+
+.card {
+  background: rgba(48, 25, 52, 0.55);
+  border: 1px solid rgba(197, 157, 95, 0.3);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--gold);
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  color: #d9c8ff;
+}
+
+.card .hint {
+  margin-top: 0.7rem;
+  color: #cfc7e3;
+  font-size: 0.9rem;
+}
+
+.card.tone {
+  background: linear-gradient(145deg, rgba(197, 157, 95, 0.12), rgba(48, 25, 52, 0.8));
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #b9adc5;
+  font-size: 0.95rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0ms !important;
+    transition-duration: 0ms !important;
+  }
+}

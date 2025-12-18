@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JuankoOS™ | Ritual creativo</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="halo"></div>
+      <p class="sigil">{{ symbols.sigil }}</p>
+      <h1>JuankoOS™</h1>
+      <p class="subtitle">Plataforma creativa + espiritual basada en Juanko Tara</p>
+      <p class="mantra">{{ symbols.mantra }}</p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Generador de contenido</h2>
+        <p>Lyrics, slogans y rituales listos para campañas o sesiones en vivo.</p>
+        <ul>
+          <li><strong>Lírica:</strong> POST /api/lyrics</li>
+          <li><strong>Slogan:</strong> POST /api/slogan</li>
+          <li><strong>Ritual:</strong> POST /api/ritual</li>
+        </ul>
+        <p class="hint">Envía JSON con <code>theme</code>, <code>mood</code>, <code>seed</code> o <code>intention</code>.</p>
+      </section>
+
+      <section class="card">
+        <h2>Monetización</h2>
+        <p>Define membresías y productos digitales en segundos.</p>
+        <ul>
+          <li><strong>Membership:</strong> POST /api/membership</li>
+          <li><strong>Tienda:</strong> POST /api/shop</li>
+        </ul>
+        <p class="hint">Recibe un blueprint listo para landing pages o newsletters.</p>
+      </section>
+
+      <section class="card">
+        <h2>OpenAI ready</h2>
+        <p>Conecta la API de OpenAI con el tono oficial de Juanko Tara.</p>
+        <ul>
+          <li><strong>Endpoint:</strong> POST /api/openai</li>
+          <li><strong>Env var:</strong> <code>OPENAI_API_KEY</code></li>
+        </ul>
+        <p class="hint">Payload incluye <code>task</code> y los campos que quieras enriquecer.</p>
+      </section>
+
+      <section class="card tone">
+        <h2>Identidad y voz</h2>
+        <p><strong>Voz:</strong> {{ tone.voice }}</p>
+        <p><strong>Persona:</strong> {{ tone.persona }}</p>
+        <p><strong>Valores:</strong> {{ ", ".join(tone.values) }}</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Oro • Negro • Púrpura · Respira, crea, trasciende.</p>
+    </footer>
+  </body>
+</html>
