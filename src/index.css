@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-black text-zinc-100 font-display antialiased;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(106, 0, 255, 0.17) 0%, transparent 30%),
+    radial-gradient(circle at 70% 0%, rgba(106, 0, 255, 0.12) 0%, transparent 35%),
+    linear-gradient(0deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: auto, auto, 100% 3px;
+}
+
+.glitch {
+  position: relative;
+}
+
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  color: #6A00FF;
+  transform: translate(1px, -1px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.noise-overlay {
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000 5px),
+    repeating-linear-gradient(rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 2px);
+  mix-blend-mode: soft-light;
+  opacity: 0.2;
+}
