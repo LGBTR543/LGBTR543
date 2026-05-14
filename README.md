@@ -1,17 +1,23 @@
-# ALTO SABOTAJE™ + JuankoOS™ Portal (v1.2)
+# ALTO SABOTAJE™ + JuankoOS™ Portal (v1.3)
 
 Premium portal experience built with React + Tailwind. Modular sections, mobile-first layout, and OpenAI-ready creative generation.
 
-## Run locally
+## Quick start (important)
+
+Run commands **inside the project folder** (where `package.json` exists):
 
 ```bash
+cd /workspace/LGBTR543
 npm install
 npm run dev
 ```
 
+If you run `npm install` from `~` (home), you'll get `ENOENT` because no `package.json` is there.
+
 ## Production
 
 ```bash
+cd /workspace/LGBTR543
 npm run build
 npm run preview
 ```
@@ -35,3 +41,8 @@ VITE_OPENAI_API_KEY=your_key_here
 ```
 
 Generator API endpoint: `POST https://api.openai.com/v1/responses`.
+
+## Troubleshooting
+
+- `ENOENT ... /home/<user>/package.json`: you are in the wrong directory. `cd` into the repo root first.
+- `403 Forbidden` when installing: your environment is blocking npm registry access; retry from a network/environment with npm access.
