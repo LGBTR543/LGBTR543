@@ -1,34 +1,48 @@
-# Hola, soy **@LGBTR543** 🌈 | Hi, I’m **@LGBTR543** 🌟  
+# ALTO SABOTAJE™ + JuankoOS™ Portal (v1.3)
 
-### 💡 **¿Qué me mueve? / What drives me?**  
-- Explorar lo desconocido con curiosidad y pasión 🌍.  
-- Colaborar en ideas que enciendan creatividad y propósito ✨.  
-- Construir puentes que conecten personas, proyectos y sueños.  
+Premium portal experience built with React + Tailwind. Modular sections, mobile-first layout, and OpenAI-ready creative generation.
 
----
+## Quick start (important)
 
-### 🚀 **En qué estoy enfocado ahora / What I’m focused on now:**  
-1. 🌱 **Aprendiendo:**  
-   - Desarrollo web moderno (¡de cero a wow!) 💻.  
-   - Comunicación efectiva en equipo y colaboración 🤝.  
-2. 🛠️ **Construyendo:**  
-   - Proyectos que combinen simplicidad e innovación.  
-   - Espacios inclusivos para crecer y brillar juntos 🌈.  
+Run commands **inside the project folder** (where `package.json` exists):
 
----
+```bash
+cd /workspace/LGBTR543
+npm install
+npm run dev
+```
 
-### 🤝 **¿Cómo colaborar conmigo? / How to collaborate with me?**  
-- Trae tus ideas: las transformamos en acción.  
-- Busco proyectos creativos donde podamos aprender juntos.  
-- Lo importante es la *vibra*: conexión genuina + crecimiento.  
+If you run `npm install` from `~` (home), you'll get `ENOENT` because no `package.json` is there.
 
----
+## Production
 
-### 📫 **Cómo contactarme / How to reach me:**
-- **Correo / Email:** [info@juankotara.com](mailto:info@juankotara.com)
-- **Instagram:** [@juanko.tara](https://www.instagram.com/juanko.tara/)
+```bash
+cd /workspace/LGBTR543
+npm run build
+npm run preview
+```
 
----
+## Architecture
 
-### 🎉 **Un fun fact para conocernos más / A fun fact about me:**
-- Me encanta aprender en el caos: donde todo parece incierto, ahí es donde surgen las mejores ideas 🚀.
+- `src/components/layout/Navbar.jsx` - responsive navigation.
+- `src/components/sections/HeroSection.jsx` - portal introduction.
+- `src/components/sections/DropsSection.jsx` - limited transmission cards.
+- `src/components/sections/RitualsSection.jsx` - activated object cards.
+- `src/components/GeneratorLab.jsx` - lyrics/slogans/ritual generation + OpenAI API integration.
+- `src/components/layout/Footer.jsx` - branded footer watermark.
+- `src/App.jsx` - clean section composition.
+
+## OpenAI
+
+Create `.env`:
+
+```bash
+VITE_OPENAI_API_KEY=your_key_here
+```
+
+Generator API endpoint: `POST https://api.openai.com/v1/responses`.
+
+## Troubleshooting
+
+- `ENOENT ... /home/<user>/package.json`: you are in the wrong directory. `cd` into the repo root first.
+- `403 Forbidden` when installing: your environment is blocking npm registry access; retry from a network/environment with npm access.
